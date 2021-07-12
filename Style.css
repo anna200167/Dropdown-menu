@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+span{
+    background-color: rgb(9, 9, 218);
+    color:#fff;
+    border-radius: 15px;
+    padding:.3rem;
+}
+.nav{
+    background-color:#f5f5f5;
+    font-size: 18px;
+}
+.nav ul{
+    list-style: none;
+}
+.nav>ul{
+    display:flex;
+    flex:1;
+    justify-content: space-between;
+}
+.nav>ul>li{
+    padding:1rem;
+    color:#333;
+}
+.nav>ul>li>a{
+    color:#333;
+}
+.nav>ul>li>ul{
+    display: none;
+}
+.nav>ul>li:hover ul{
+    display: block;
+    width:200px;
+    position:absolute; 
+    background-color: darkblue;
+    color:#fff;
+   transition: all 0.4s ease-in-out;
+
+}
+.nav>ul>li:hover ul li{
+    background-color: darkblue;
+    color:#fff;
+    padding: 10px;
+   transition: all 0.4s ease-in-out;
+
+}
+.nav>ul>li:hover ul li a{
+    background-color: darkblue;
+    color:#fff;
+   transition: all 0.4s ease-in-out;
+
+}
+.nav>ul>li:hover ul li:hover
+{
+   transform: scale(1.1);
+   overflow: hidden;
+   transition: all 0.4s ease-in-out;
+   
+}
+#blog li{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+@media (max-width:500px) {
+    .nav>ul{
+        display:flex;
+        flex-direction: column;
+        flex:1;
+        justify-content: space-between;
+    }
+    .nav>ul>li:hover ul{
+        display: block;
+        width:100%;
+        position:relative; 
+        background-color: darkblue;
+        color:#fff;
+    }
+}
